@@ -9,7 +9,15 @@ body{
 $dark-blue: hsl(240, 38%, 20%);
 $grayish-blue: hsl(240, 18%, 77%);
 
-.container{
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+.slider{
     height: 100vh;
     border: 1px solid blue;
     display: flex;
@@ -86,4 +94,7 @@ $grayish-blue: hsl(240, 18%, 77%);
             }
         }
     }
+}
+.hide{
+    display: none;
 }
