@@ -1,19 +1,10 @@
 //target DOM elements
-const prev = document.querySelectorAll('.prev')
-const next = document.querySelectorAll('.next')
+const buttons = document.querySelectorAll('.next, .prev')
 const sliders = document.querySelectorAll('.slider')
 
-
-prev.forEach((previous) => {
-    previous.addEventListener('click', () => {
-        sliders.forEach((slider) => {
-            slider.classList.toggle("hide")
-        })
-    })
-})
-
-next.forEach((nextBtn) => {
-    nextBtn.addEventListener('click', () => {
+//toggle on buttons to switch from one to another person
+buttons.forEach((button) => {
+    button.addEventListener('click', () => {
         sliders.forEach((slider) => {
             slider.classList.toggle("hide")
         })
